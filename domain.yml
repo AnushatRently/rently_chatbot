@@ -3,19 +3,20 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  # - affirm
+  # - deny
+  # - mood_great
+  # - mood_unhappy
   - bot_challenge
+  - cancel_my_tour
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! How can I help You?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -28,6 +29,15 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_no_need_to_cancel:
+    - text: "No need to cancel or reschedule 😊"
+
+  utter_skip_tour:
+    - text: "If you are unable to or no longer wish to view the property, just skip your tour!"
+
+  utter_no_credit_decrease:
+    - text: "Don't worry, you won't lose any of your viewing credits!" 
 
 session_config:
   session_expiration_time: 60

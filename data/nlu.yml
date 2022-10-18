@@ -16,7 +16,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
+    
 - intent: goodbye
   examples: |
     - cu
@@ -29,59 +29,60 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - Thanks
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
 
 - intent: bot_challenge
   examples: |
@@ -89,3 +90,26 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: cancel_my_tour
+  examples: |
+    - Can you cancel this showing
+    - Reschedule
+    - I wanted to schedule another tour today if possible?
+    - I have another engagement to attend. Reschedule
+    - Can I reschedule this? I thought it was a virtual tour
+    - I didn’t mean to choose that tour time cancel tour
+    - Why would it allow me to schedule it if I'm unable to view it?
+    - Schedule a tour
+    - Need to reschedule a self tour
+    - Cancel viewing 
+    - Cancel appointment
+    - Need to reschedule an appointment
+    - How do I cancel a showing
+    - I have two tours scheduled and would like to cancel one
+    - the website isn’t alerting me to reschedule my tour
+    - I need to cancel a tour request
+    - How do I cancel a tour I've scheduled?
+    - Cant schedule a tour
+    - How do I cancel a viewing
+    - I need to cancel for tomorrow how do i do that?
