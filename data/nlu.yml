@@ -113,3 +113,24 @@ nlu:
     - Cant schedule a tour
     - How do I cancel a viewing
     - I need to cancel for tomorrow how do i do that?
+
+- intent: create_account
+  examples: |
+    - I’m trying to self tour
+    - How set up the tour
+    - Need code to tour house
+    - What's a self tour
+    - I want to open account 
+    - Trying to open account 
+    - I’ll like to tour the property 
+    - Want a tour 
+    - Want to do a tour
+    - Tour
+    - Need Demo
+    - I need a walk through how to get a self tour
+    - I filled out a demo
+    - Not able to request a demo
+    - How to start over
+    - I need help getting a demo
+    - I am trying to figure out how to self tour?
+    - This is my first time using Rently

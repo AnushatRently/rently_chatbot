@@ -9,6 +9,10 @@ intents:
   # - mood_unhappy
   - bot_challenge
   - cancel_my_tour
+  - create_account
+
+actions:
+  - action_instruction_to_create_account
 
 responses:
   utter_greet:
@@ -30,14 +34,22 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_no_need_to_cancel:
-    - text: "No need to cancel or reschedule 😊"
-
   utter_skip_tour:
-    - text: "If you are unable to or no longer wish to view the property, just skip your tour!"
+    - text: |
+        No need to cancel or reschedule 😊
+        If you are unable to or no longer wish to view the property, just skip your tour!
+        Don't worry, you won't lose any of your viewing credits!
 
-  utter_no_credit_decrease:
-    - text: "Don't worry, you won't lose any of your viewing credits!" 
+  utter_got_it:
+    - text: "Got it!"
+    - text: "I can help!"
+
+  utter_instruction_to_create_account:
+    - text: |
+        To create an account, please follow the instructions below:
+        Note: You must have a valid cell phone number. No google voice or pre-paid phones:
+        Rently Sign Up https://homes.rently.com/profile
+        Here is the Rently informational video! https://www.youtube.com/watch?v=GOMMt939gck"
 
 session_config:
   session_expiration_time: 60
