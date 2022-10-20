@@ -1,0 +1,26 @@
+version: "3.1"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+- intent: goodbye
+  examples: |
+    - see you around
+    - have a nice day
+- intent: greet
+  examples: |
+    - hey
+    - hi
+    - hey there
+- intent: create_account
+  examples: |
+    - How to start over
+    - I am trying to figure out how to self tour?
+    - Want to do a tour
+    - How set up the tour
+- intent: cancel_my_tour
+  examples: |
+    - Can I reschedule this? I thought it was a virtual tour
+    - Cancel viewing
+    - Need to reschedule an appointment
+    - I have two tours scheduled and would like to cancel one

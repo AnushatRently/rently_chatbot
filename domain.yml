@@ -10,13 +10,39 @@ intents:
   - bot_challenge
   - cancel_my_tour
   - create_account
+  - satisfied
+  - not_satisfied
 
 actions:
-  - action_instruction_to_create_account
+  - action_set_satisfied_as_true
+  - action_set_satisfied_as_false
+
+slots:
+  s:
+    type: bool
+    mappings:
+    - type: custom
+
+# templates:
+#   utter_connect_agent_or_thanks:
+#   - text: "Thanks for your support. Have a great day"
+#     condition:
+#       - type: slot
+#         name: s
+#         value: True
+#   - text: "I can help you find things that you've lost either on a train or some other place in town."
+#     condition:
+#       - type: slot
+#         name: s
+#         value: False
+#   - text: "Just to check"  
 
 responses:
   utter_greet:
-  - text: "Hey! How can I help You?"
+  - text: |
+      Hey!
+      This is Rently's Chat Bot
+      How can I help you?
 
   # utter_cheer_up:
   # - text: "Here is something to cheer you up:"
@@ -50,6 +76,48 @@ responses:
         Note: You must have a valid cell phone number. No google voice or pre-paid phones:
         Rently Sign Up https://homes.rently.com/profile
         Here is the Rently informational video! https://www.youtube.com/watch?v=GOMMt939gck"
+
+  utter_feedback:
+    - text: Is it helped you?
+
+  # utter_connect_agent_or_thanks:
+  #   # - condition:
+  #   #     - type: slot
+  #   #       name: satisfied
+  #   #       value: true
+  #   #   text: Thanks for your support. Have a great day.
+
+  #   # - condition:
+  #   #     - type: slot
+  #   #       name: satisfied
+  #   #       value: false
+  #   #   text: Ok! you will be agent connected to a live agent in short. Thank you for using the Rently's Chat Bot   
+
+  # - text: "Thanks for your support. Have a great day"
+  #   condition:
+  #     - type: slot
+  #       name: satisfied
+  #       value: true
+
+  # - text: "Ok! you will be agent connected to a live agent in short. Thank you for using the Rently's Chat Bot"
+  #   conditon:
+  #     - type: slot
+  #       name: satisified
+  #       value: false
+
+  # utter_connect_agent_or_thanks:
+  # - text: "Thanks for your support. Have a great day"
+  #   condition:
+  #     - type: slot
+  #       name: s
+  #       value: true
+  # - text: "I can help you find things that you've lost either on a train or some other place in town."
+  #   condition:
+  #     - type: slot
+  #       name: s
+  #       value: false
+  # - text: "Just to check"    
+
 
 session_config:
   session_expiration_time: 60

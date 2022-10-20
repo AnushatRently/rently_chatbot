@@ -1,0 +1,64 @@
+version: "3.1"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - am I talking to a human?
+    - am I talking to a bot?
+    - are you a bot?
+- intent: goodbye
+  examples: |
+    - see you later
+    - bye
+    - good by
+    - bye bye
+    - good night
+    - cee you later
+    - goodbye
+    - cu
+    - Thanks
+- intent: greet
+  examples: |
+    - hello
+    - goodmorning
+    - moin
+    - good morning
+    - hey dude
+    - good afternoon
+    - hello there
+    - good evening
+    - let's go
+    - goodevening
+- intent: create_account
+  examples: |
+    - Not able to request a demo
+    - What's a self tour
+    - Trying to open account
+    - I filled out a demo
+    - I need help getting a demo
+    - I need a walk through how to get a self tour
+    - Need Demo
+    - This is my first time using Rently
+    - I’m trying to self tour
+    - I’ll like to tour the property
+    - Need code to tour house
+    - Want a tour
+    - I want to open account
+    - Tour
+- intent: cancel_my_tour
+  examples: |
+    - Need to reschedule a self tour
+    - How do I cancel a viewing
+    - Schedule a tour
+    - the website isn’t alerting me to reschedule my tour
+    - Cancel appointment
+    - Reschedule
+    - I have another engagement to attend. Reschedule
+    - Cant schedule a tour
+    - I didn’t mean to choose that tour time cancel tour
+    - Can you cancel this showing
+    - I need to cancel a tour request
+    - Why would it allow me to schedule it if I'm unable to view it?
+    - I wanted to schedule another tour today if possible?
+    - How do I cancel a showing
+    - I need to cancel for tomorrow how do i do that?
+    - How do I cancel a tour I've scheduled?

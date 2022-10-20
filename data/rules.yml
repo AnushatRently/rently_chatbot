@@ -11,3 +11,13 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Satisfied with Rently
+  steps:
+  - intent: satisfied
+  - action: action_set_satisfied_as_true  
+
+- rule: Redirection to live agent
+  steps:
+  - intent: not_satisfied
+  - action: action_set_satisfied_as_false

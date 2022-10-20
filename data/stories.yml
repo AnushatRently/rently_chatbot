@@ -29,20 +29,47 @@ stories:
 #   - intent: deny
 #   - action: utter_goodbye
 
-- story: cancel_tour
+- story: cancel_tour_with_satisfied
   steps:
   - intent: greet
   - action: utter_greet
   - intent: cancel_my_tour
   - action: utter_skip_tour
+  - action: utter_feedback
+  - intent: satisfied
+  - action: action_set_satisfied_as_true
 
-- story: create_account
+- story: cancel_tour_without_satisfied
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_my_tour
+  - action: utter_skip_tour
+  - action: utter_feedback
+  - intent: not_satisfied
+  - action: action_set_satisfied_as_false
+
+- story: create_account_with_satisfied
   steps:
   - intent: greet
   - action: utter_greet
   - intent: create_account
   - action: utter_got_it
   - action: utter_instruction_to_create_account
+  - action: utter_feedback
+  - intent: satisfied
+  - action: action_set_satisfied_as_true
+
+- story: create_account_without_satisfied
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: create_account
+  - action: utter_got_it
+  - action: utter_instruction_to_create_account
+  - action: utter_feedback
+  - intent: not_satisfied
+  - action: action_set_satisfied_as_false
 
 - story: thanks
   steps:

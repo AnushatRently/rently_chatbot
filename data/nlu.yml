@@ -134,3 +134,31 @@ nlu:
     - I need help getting a demo
     - I am trying to figure out how to self tour?
     - This is my first time using Rently
+
+- intent: satisfied
+  examples: |
+    - Good
+    - Yes
+    - I am satisified
+    - Performance is good
+    - Reduced my time
+    - Great
+    - Nice
+    - Wonderful
+    - Not bad
+    - Really Useful
+    - Really Good
+    - Rently Bot is Good
+    - Working fine
+    - Well designed
+
+- intent: not_satisfied
+  examples: |
+    - Bad
+    - Not satisified
+    - Not Good
+    - Really bad
+    - Very bad experience
+    - Need improvements
+    - Cant able to understand
+    - Shit
